@@ -1,0 +1,32 @@
+#banner{
+	width: 100vw;
+	position: relative;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #4A19B5, -2px -2px #e0811f;
+}
+
+.banner-image{
+	width: 100%;
+}
+
+.centered {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+h1.centered{
+	top: 45%;
+	left: 50%;
+	font-size: 5vw;
+}
+h2.centered{
+	top: 55%;
+	left: 50%;
+	font-size: 4vw;
+}
+p.centered{
+	top: 85%;
+	left: 50%;
+	font-size: 2vw;
+}
