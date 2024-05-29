@@ -1,0 +1,35 @@
+#sidebar{
+	position: fixed;
+	left: 0;
+	z-index: 99;
+
+	height: 100%;
+	width: 15vw;
+
+	background: $pale-purple;
+	border-right: 5px solid $pale-purple-border;
+
+	display:flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#banner{
+	position: relative;
+	width: 85vw;
+	max-width: 85%;
+	float: right;
+	text-align: center;
+	text-shadow: 2px 2px $primary-purple, -2px -2px $primary-orange;
+
+	h1, h2, p{
+		color: white;
+	}
+}
+
+.container{
+	width: 85vw;
+	float: right;
+	max-width: 85%;
+}

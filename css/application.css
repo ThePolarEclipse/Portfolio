@@ -1,11 +1,61 @@
-#banner { width: 100vw; position: relative; text-align: center; color: white; text-shadow: 2px 2px #4A19B5, -2px -2px #e0811f; }
+@font-face { font-family: "Roboto Slab"; src: url(../fonts/RobotoSlab-VariableFont_wght.ttf); font-weight: 100 2000; font-stretch: 75% 125%; font-style: normal; }
+
+*, *::after, *::before { box-sizing: border-box; font-family: "Roboto Slab"; color: #362d4a; }
+
+a { text-decoration: none; cursor: pointer; }
+
+a:hover { text-decoration: underline; }
+
+body { letter-spacing: 0.4px; margin: 0 auto; }
+
+#project-list { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 30px; grid-row-gap: 30px; margin-left: 1vw; margin-top: 1vw; max-width: 100%; }
+
+#project-list .odd { border: 2px solid #4A19B5; }
+
+#project-list .even { border: 2px solid #e0811f; }
+
+#project-list .project-item { border-radius: 5px; }
+
+#project-list .project-item .project-img { max-width: 100%; }
+
+#project-list .project-item h2, #project-list .project-item h3 { padding-left: 0.5vw; white-space: nowrap; overflow: hidden; }
+
+#sidebar { position: fixed; left: 0; z-index: 99; height: 100%; width: 15vw; background: #e9e0ff; border-right: 5px solid #c5adff; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+
+#banner { position: relative; width: 85vw; max-width: 85%; float: right; text-align: center; text-shadow: 2px 2px #4A19B5, -2px -2px #e0811f; }
+
+#banner h1, #banner h2, #banner p { color: white; }
+
+.container { width: 85vw; float: right; max-width: 85%; }
+
+h1.centered { top: 45%; left: 50%; font-size: 4.5vw; }
+
+h2.centered { top: 55%; left: 50%; font-size: 3.8vw; }
+
+p.centered { top: 85%; left: 50%; font-size: 2vw; }
+
+.initials { font-weight: 900; font-size: 5vw; }
+
+.sidebar-items h2 { display: flex; align-items: center; flex-direction: column; width: 100%; font-weight: 500; font-size: 1.5vw; padding-top: 3vw; white-space: nowrap; overflow: hidden; }
+
+.sidebar-items h2 a:hover { text-shadow: 2px 2px 6px #c5adff, -2px -2px 6px #c5adff; }
+
+#sidebar-contact > h2 { font-weight: 1000; font-size: 2vw; padding-top: 0; }
+
+.centered { position: absolute; transform: translate(-50%, -50%); margin: 0 auto; white-space: nowrap; overflow: hidden; }
 
 .banner-image { width: 100%; }
 
-.centered { position: absolute; transform: translate(-50%, -50%); margin: 0 auto; }
+.initials-box { height: 10vw; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 5px solid #c5adff; }
 
-h1.centered { top: 45%; left: 50%; font-size: 5vw; }
+.sidebar-items { width: 100%; display: flex; flex-direction: column; align-items: center; }
 
-h2.centered { top: 55%; left: 50%; font-size: 4vw; }
+#sidebar-contact { margin-top: 2vw; width: 100%; display: flex; flex-direction: column; align-items: center; border-top: 5px solid #c5adff; border-bottom: 5px solid #c5adff; }
 
-p.centered { top: 85%; left: 50%; font-size: 2vw; }
+.primary-purple_text { color: #4A19B5; }
+
+.primary-purple_back { background-colour: #4A19B5; }
+
+.primary-orange_text { color: #e0811f; }
+
+.primary-orange_back { background-colour: #e0811f; }

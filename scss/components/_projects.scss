@@ -1,0 +1,31 @@
+#project-list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;	
+
+	margin-left: 1vw;
+	margin-top: 1vw;
+	max-width: 100%;
+
+	.odd{
+		border: 2px solid $primary-purple;
+	}
+	.even{
+		border: 2px solid $primary-orange;
+	}
+
+	.project-item{
+		border-radius: 5px;
+		
+		.project-img{
+			max-width: 100%;
+		}
+		h2,h3{
+			padding-left: 0.5vw;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.initials-box{
+	height: 10vw;
+	width: 100%;
+
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	border-bottom: 5px solid $pale-purple-border;
+}
+.sidebar-items{
+
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+#sidebar-contact{
+	margin-top: 2vw;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+	border-top: 5px solid $pale-purple-border;
+	border-bottom: 5px solid $pale-purple-border;
+}

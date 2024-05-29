@@ -1,0 +1,18 @@
+.primary{
+	&-purple{
+		&_text{
+			color: $primary-purple;
+		}
+		&_back{
+			background-colour: $primary-purple;
+		}
+	}
+	&-orange{
+		&_text{
+			color: $primary-orange;
+		}
+		&_back{
+			background-colour: $primary-orange;
+		}
+	}
+}
