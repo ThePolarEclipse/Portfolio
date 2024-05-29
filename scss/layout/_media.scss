@@ -1,7 +1,23 @@
-@include not-viewport(mobile) {
+//testing. remove later
 
+@include not-viewport(XS) {
+	#sidebar-contact>h2{
+	font-weight: 1000;
+	font-size: 2vw;
+	padding-top: 0;
+	a{
+	color: red;
+	}
+}
 }
 
-@include is-viewport(mobile) {
-
+@include is-viewport(XS) {
+	#sidebar-contact>h2{
+	font-weight: 1000;
+	font-size: 2vw;
+	padding-top: 0;
+	a{
+	color: green;
+	}
+}
 }
