@@ -1,31 +1,51 @@
 #project-list{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 30px;
-	grid-row-gap: 30px;	
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 
-	margin-left: 1vw;
-	margin-top: 1vw;
-	max-width: 100%;
 
 	.odd{
-		border: 2px solid $primary-purple;
+		border: 2px solid $pale-purple-border;
+		background: $pale-orange;
 	}
 	.even{
-		border: 2px solid $primary-orange;
+		border: 2px solid $pale-orange-border;
+		background: $pale-purple;
+	}
+
+	.project-item h2,h3{
+		padding-left: 4vw;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 	.project-item{
+		margin: 5vw 0;
+		min-width: 30%;
+
 		border-radius: 5px;
-		
+
+		cursor: pointer;
+
+		position: relative;
+		top: 0px;
+		transition: .5s ease;
+
 		.project-img{
 			max-width: 100%;
-		}
-		h2,h3{
-			padding-left: 0.5vw;
-			white-space: nowrap;
 			overflow: hidden;
+			height: auto;
+		}
+		h2 {
+			font-size: 4.8vw;
+		}
+		h3{
+			font-size: 3.8vw;
+		}
+
+		&:hover{
+			top: -10px;
+			transition: .5s ease;
 		}
 	}
 }

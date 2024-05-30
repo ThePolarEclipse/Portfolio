@@ -6,19 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/application.css">
     </head>
-    <body>  
+    <body id="top">  
         <header>
             <div id="sidebar">
                 <div class="initials-box">
-                    <h1 class="initials"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></h1>
+                    <h1 class="initials"><a href="index.html"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></a></h1>
                 </div>
                 <div class="sidebar-items">
-                    <h2><a>About Me</a></h2>
-                    <h2><a>My Portfolio</a></h2>
-                    <h2><a>Coding Examples</a></h2>
-                    <h2><a>SCS Scheme</a></h2>
+                    <h2><a href="internal-pages/about-me.html">About Me</a></h2>
+                    <h2><a href="#project-list">My Portfolio</a></h2>
+                    <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
+                    <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
                     <div id="sidebar-contact">
-                        <h2><a>Contact Me</a></h2>
+                        <h2><a href="#get-in-touch">Contact Me</a></h2>
                     </div>
                     <div id="header-socials">
                         <span></span>
@@ -33,47 +33,87 @@
                 <h1 class="centered">I'm Richard Searle</h1>
                 <h2 class="centered">- Web Developer -</h2>
 
-                <p class="centered">Scroll Down<br>vvv</p>
+                <p class="centered hide-lessthanS">Scroll Down<br>vvv</p>
             </div>
         </header>
         <body>
             <div class="container">
                 <div id="project-list">
                     <div class="project-item odd">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
-                        <h2>Project One</h2>
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
+                        <h2>Netmatters Site</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item even">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                         <h2>Project Two</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item odd">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                         <h2>Project Three</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item even">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                         <h2>Project Four</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item odd">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                         <h2> Project Five</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item even">
-                        <img class="project-img" src="media/background.jpg" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                         <h2>Project Six</h2>
                         <h3 class="icon-arrow_right">View Project</h3>
+                    </div>
+                </div>
+                <div id="get-in-touch">
+                    <div id="information">
+                        <div>
+                            <h2>Get In Touch</h2>
+                            <p>Feel free to contact me by any means provided here.</p>
+                        </div>
+                        <div>
+                            <h3>00000 000000</h3>
+                            <h3>myemail@email.com</h3>
+                            <p>The best time of day to call me is between 10am and 3pm.<br> An email will be replied to swiftly.</p>
+                        </div>
+                    </div>
+                    <div id="inputs">
+                        <form>
+                            <div class="form-group name-inputs">
+                                <label class="hidden">Your first name</label>
+                                <input class="form-input" id="email-firstname" name="firstname" type="text" placeholder="First Name*">
+
+                                <label class="hidden">Your last name</label>
+                                <input class="form-input" id="email-lastname" name="lastname" type="text" placeholder="Last Name*">
+                            </div>
+                            <div class="form-group">
+                                <label class="hidden">Your email address</label>
+                                <input class="form-input" id="email-address" name="emailaddress" type="text" placeholder="Email Address*">
+                            </div>
+                            <div class="form-group">
+                                <label class="hidden">Subject matter</label>
+                                <input class="form-input" id="email-subject" name="subjectmatter" type="text" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <label class="hidden">Your message</label>
+                                <textarea class="form-input" id="email-message" name="message" placeholder="Message..."></textarea>
+                            </div>
+
+                            <button name="submit" class="btn email-submit darken">Submit</button>
+                         </form>
                     </div>
                 </div>
             </div>
         </body>
         <footer>
-        
+            <div class="container">
+                <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
+            </div>
         </footer>
     </body>
 </html>

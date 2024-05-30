@@ -27,3 +27,33 @@
     @media (min-width: 1200px) { @content; }
   }
 }
+
+//is less than that viewport
+@mixin less-viewport($breakpoint) {
+  @if $breakpoint == XS {
+    @media (max-width: 280px) { @content; }
+  } @else if $breakpoint == S {
+    @media (max-width: 567px) { @content; }
+  } @else if $breakpoint == M {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == L {
+    @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == XL {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+//is more than that viewport
+@mixin more-viewport($breakpoint) {
+  @if $breakpoint == XS {
+    @media (min-width: 280px) { @content; }
+  } @else if $breakpoint == S {
+    @media (min-width: 567px) { @content; }
+  } @else if $breakpoint == M {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == L {
+    @media (min-width: 992px) { @content; }
+  } @else if $breakpoint == XL {
+    @media (min-width: 1200px) { @content; }
+  }
+}

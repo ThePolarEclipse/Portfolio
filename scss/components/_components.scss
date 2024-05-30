@@ -17,9 +17,7 @@
 
 #banner{
 	position: relative;
-	width: 85vw;
-	max-width: 85%;
-	float: right;
+	width: 100%;
 	text-align: center;
 	text-shadow: 2px 2px $primary-purple, -2px -2px $primary-orange;
 
@@ -29,7 +27,17 @@
 }
 
 .container{
-	width: 85vw;
-	float: right;
-	max-width: 85%;
+	width: 100%;
+	padding: 0 6vw;
+}
+
+#get-in-touch{
+	display:flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	justify-content: space-around;
+
+	padding-top: 2vw;
+
+	width: 100%;
 }

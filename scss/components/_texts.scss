@@ -1,14 +1,14 @@
-h1.centered{
-	top: 45%;
+#banner h1.centered{
+	top: 42%;
 	left: 50%;
-	font-size: 4.5vw;
+	font-size: 8vw;
 }
-h2.centered{
-	top: 55%;
+#banner h2.centered{
+	top: 58%;
 	left: 50%;
-	font-size: 3.8vw;
+	font-size: 6vw;
 }
-p.centered{
+#banner p.centered{
 	top: 85%;
 	left: 50%;
 	font-size: 2vw;
@@ -26,7 +26,7 @@ p.centered{
 	width: 100%;
 	font-weight: 500;
 	font-size: 1.5vw;
-	padding-top: 3vw;
+	padding-top: 2vw;
 
 	white-space: nowrap;
 	overflow: hidden;
@@ -39,4 +39,12 @@ p.centered{
 	font-weight: 1000;
 	font-size: 2vw;
 	padding-top: 0;
+}
+
+.to-top{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+
+	padding-bottom: 20px;
 }

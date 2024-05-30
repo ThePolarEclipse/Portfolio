@@ -1,23 +1,88 @@
-//testing. remove later
+@include more-viewport(M) {
+	#project-list{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;	
 
-@include not-viewport(XS) {
-	#sidebar-contact>h2{
-	font-weight: 1000;
-	font-size: 2vw;
-	padding-top: 0;
-	a{
-	color: red;
+		.project-item h2,h3{
+			padding-left: 1vw;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.project-item{
+			margin: 0;
+
+			h2 {
+				font-size: 1.8vw;
+			}
+			h3{
+				font-size: .8vw;
+			}
+		}
+	}
+	#banner h1.centered{
+		top: 45%;
+		left: 50%;
+		font-size: 4.5vw;
+	}
+	#banner h2.centered{
+		top: 55%;
+		left: 50%;
+		font-size: 3.8vw;
+	}
+	#banner p.centered{
+		top: 85%;
+		left: 50%;
+		font-size: 2vw;
+	}
+	#get-in-touch{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		padding-top: 2vw;
+
+		width: 100%;
+	}
+	#information, #inputs{
+		width: 45%;
 	}
 }
-}
-
-@include is-viewport(XS) {
-	#sidebar-contact>h2{
-	font-weight: 1000;
-	font-size: 2vw;
-	padding-top: 0;
-	a{
-	color: green;
+@include less-viewport(S) {
+	#sidebar,
+	.hide-lessthanS{
+		display:none;
 	}
 }
+@include more-viewport(S) {
+	.container{
+		width: 85vw;
+		float: right;
+		max-width: 85%;
+	}
+	#project-list{
+		margin-top: 1vw;
+		max-width: 100%;
+	}
+	#banner{
+		width: 85vw;
+		max-width: 85%;
+		float: right;
+	}
+}
+
+@include less-viewport(XS) {
+	.name-inputs{
+		display: block;
+
+		.form-input{
+			width: 100%;
+		}
+	}
+	#email-firstname{
+		margin-bottom: 10px;
+	}
 }

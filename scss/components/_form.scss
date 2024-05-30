@@ -1,0 +1,35 @@
+.form-group {
+	margin: 10px 0;
+
+	.form-input{
+		width: 100%;
+		background: lightgrey;
+		border: none;
+		padding: 2px;
+		padding-left: 10px;
+
+		&::placeholder{
+			color: $default-text-colour
+		}
+	}
+}
+#email-message{
+	height: 15vh;
+	text-align: justify;
+}
+.email-submit{
+	margin-bottom: 1vw;
+}
+
+#information, #inputs{
+	width: 100%;
+}
+
+.name-inputs{
+	display: flex;
+	justify-content: space-between;
+
+	.form-input{
+		width: 49%;
+	}
+}
