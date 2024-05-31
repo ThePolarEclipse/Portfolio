@@ -56,11 +56,15 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 .container-footer { padding-top: 10vw; }
 
+.container-page h2, .container-page h3 { border-bottom: 1px dotted grey; }
+
 #get-in-touch { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-around; padding-top: 2vw; width: 100%; }
 
-.btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 8vw; width: 8vw; font-size: 5vw; display: none; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
+.btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 8vw; width: 8vw; font-size: 5vw; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
 
-.burger-menu { position: fixed; top: 0px; z-index: 1; width: 100%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
+.burger-menu { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
+
+footer { padding-bottom: 2rem; }
 
 #banner h1.centered { top: 42%; left: 50%; font-size: 8vw; }
 
@@ -76,7 +80,7 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 #sidebar-contact > h2 { font-weight: 1000; font-size: 2vw; padding-top: 0; }
 
-.to-top { display: flex; text-align: center; justify-content: center; padding-bottom: 20px; }
+.to-top { position: fixed; left: 50%; bottom: 0; transform: translate(-50%, -50%); display: flex; text-align: center; justify-content: center; padding-bottom: 20px; background: #ffce99; border: #ffb666 solid 2px; margin-bottom: 1vw; padding: 0 1vw; }
 
 .scheme-link { text-decoration: underline; }
 
@@ -122,8 +126,10 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 @media (min-width: 567px) { .container { width: 85vw; float: right; max-width: 85%; }
   #project-list { margin-top: 1vw; max-width: 100%; }
-  #banner { width: 85vw; max-width: 85%; float: right; } }
+  #banner { width: 85vw; max-width: 85%; float: right; }
+  .burger-menu { display: none; } }
 
 @media (max-width: 280px) { .name-inputs { display: block; }
   .name-inputs .form-input { width: 100%; }
-  #email-firstname { margin-bottom: 10px; } }
+  #email-firstname { margin-bottom: 10px; }
+  #information h3 { font-size: 7vw; } }

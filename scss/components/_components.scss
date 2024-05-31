@@ -34,6 +34,11 @@
 	&-footer{
 		padding-top: 10vw;
 	}
+
+	&-page h2, &-page h3{
+		border-bottom: 1px dotted grey;
+		
+	}
 }
 
 #get-in-touch{
@@ -58,8 +63,6 @@
 
 	font-size: 5vw;
 
-	display: none;
-
 	background: $pale-purple;
 
 	border: $pale-purple-border solid 2px;
@@ -68,10 +71,11 @@
 
 .burger-menu{
 	position: fixed;
-	top: 0px;
+	top: 0;
 	z-index: 1;
 
-	width: 100%;
+	width: 96%;
+	right: 2%;
 
 	display: flex;
 
@@ -79,4 +83,8 @@
 
 	border: $pale-purple-border solid 2px;
 	border-radius: 5%;
+}
+
+footer{
+	padding-bottom: 2rem;
 }

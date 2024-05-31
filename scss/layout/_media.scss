@@ -78,6 +78,9 @@
 		max-width: 85%;
 		float: right;
 	}
+	.burger-menu{
+		display: none;
+	}
 }
 
 @include less-viewport(XS) {
@@ -90,5 +93,9 @@
 	}
 	#email-firstname{
 		margin-bottom: 10px;
+	}
+
+	#information h3{
+		font-size: 7vw;
 	}
 }

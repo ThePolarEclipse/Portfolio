@@ -42,12 +42,24 @@
 }
 
 .to-top{
+	position: fixed;
+	left: 50%;
+    bottom: 0;
+	transform: translate(-50%, -50%);
+
 	display: flex;
 	text-align: center;
 	justify-content: center;
 
 	padding-bottom: 20px;
+
+	background: $pale-orange;
+	border: $pale-orange-border solid 2px;
+
+	margin-bottom: 1vw;
+	padding: 0 1vw;
 }
+
 
 .scheme-link{
 	text-decoration: underline;
