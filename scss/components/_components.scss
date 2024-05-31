@@ -18,6 +18,7 @@
 #banner{
 	position: relative;
 	width: 100%;
+	max-height: 100vh;
 	text-align: center;
 	text-shadow: 2px 2px $primary-purple, -2px -2px $primary-orange;
 
@@ -29,6 +30,10 @@
 .container{
 	width: 100%;
 	padding: 0 6vw;
+
+	&-footer{
+		padding-top: 10vw;
+	}
 }
 
 #get-in-touch{
@@ -40,4 +45,38 @@
 	padding-top: 2vw;
 
 	width: 100%;
+}
+
+.btn-hamburger{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 2;
+
+	height: 8vw;
+	width: 8vw;
+
+	font-size: 5vw;
+
+	display: none;
+
+	background: $pale-purple;
+
+	border: $pale-purple-border solid 2px;
+	border-radius: 5%;
+}
+
+.burger-menu{
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+
+	width: 100%;
+
+	display: flex;
+
+	background: $pale-purple;
+
+	border: $pale-purple-border solid 2px;
+	border-radius: 5%;
 }

@@ -1,0 +1,12 @@
+.icon{
+	&::after{
+		font-family: "icomoon" !important;
+	}
+
+	&-arrow_right::after{
+		content: " \ea3c";
+	}
+	&-hamburger::after{
+		content: "\e9bd";
+	}
+}
