@@ -1,3 +1,8 @@
+.darken:hover{
+    transition: filter 0.15s ease;
+    filter: brightness(80%);
+}
+
 #sidebar{
 	position: fixed;
 	left: 0;

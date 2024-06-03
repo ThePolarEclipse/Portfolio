@@ -51,19 +51,24 @@
 		width: 45%;
 	}
 }
-@include less-viewport(S) {
-	#sidebar,
-	.hide-lessthanS{
-		display:none;
-	}
+@include less-viewport(M){
 	.btn-hamburger{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
+	#sidebar{
+		display:none;
+	}
 }
-@include more-viewport(S) {
+
+@include less-viewport(S) {
+	.hide-lessthanS{
+		display:none;
+	}
+}
+@include more-viewport(M) {
 	.container{
 		width: 85vw;
 		float: right;

@@ -6,7 +6,7 @@
 
 a { text-decoration: none; cursor: pointer; }
 
-body { letter-spacing: 0.4px; margin: 0 auto; }
+body { letter-spacing: 0.4px; margin: 0 auto; background: #eef; }
 
 .hidden { display: none; }
 
@@ -30,19 +30,21 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 .form-group { margin: 10px 0; }
 
-.form-group .form-input { width: 100%; background: lightgrey; border: none; padding: 2px; padding-left: 10px; }
+.form-group .form-input { width: 100%; background: lightgrey; border: none; padding: 10px; padding-left: 10px; }
 
 .form-group .form-input::placeholder { color: #362d4a; }
 
 #email-message { height: 15vh; text-align: justify; }
 
-.email-submit { margin-bottom: 1vw; }
+.email-submit { margin-bottom: 1vw; padding: 7px; cursor: pointer; background: #ffce99; border-radius: 10%; border-color: lightgrey; text-transform: uppercase; font-weight: 600; }
 
 #information, #inputs { width: 100%; }
 
 .name-inputs { display: flex; justify-content: space-between; }
 
 .name-inputs .form-input { width: 49%; }
+
+.darken:hover { transition: filter 0.15s ease; filter: brightness(80%); }
 
 #sidebar { position: fixed; left: 0; z-index: 99; height: 100%; width: 15vw; background: #e9e0ff; border-right: 5px solid #c5adff; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
 
@@ -110,7 +112,7 @@ footer { padding-bottom: 2rem; }
 
 .primary-orange_back { background-colour: #e0811f; }
 
-@media (min-width: 768px) { #project-list { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 30px; grid-row-gap: 30px; }
+@media (min-width: 769px) { #project-list { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 30px; grid-row-gap: 30px; }
   #project-list .project-item h2, #project-list h3 { padding-left: 1vw; white-space: nowrap; overflow: hidden; }
   #project-list .project-item { margin: 0; }
   #project-list .project-item h2 { font-size: 1.8vw; }
@@ -121,10 +123,12 @@ footer { padding-bottom: 2rem; }
   #get-in-touch { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; padding-top: 2vw; width: 100%; }
   #information, #inputs { width: 45%; } }
 
-@media (max-width: 567px) { #sidebar, .hide-lessthanS { display: none; }
-  .btn-hamburger { display: flex; flex-direction: row; justify-content: center; align-items: center; } }
+@media (max-width: 768px) { .btn-hamburger { display: flex; flex-direction: row; justify-content: center; align-items: center; }
+  #sidebar { display: none; } }
 
-@media (min-width: 567px) { .container { width: 85vw; float: right; max-width: 85%; }
+@media (max-width: 567px) { .hide-lessthanS { display: none; } }
+
+@media (min-width: 769px) { .container { width: 85vw; float: right; max-width: 85%; }
   #project-list { margin-top: 1vw; max-width: 100%; }
   #banner { width: 85vw; max-width: 85%; float: right; }
   #burger-menu { display: none; } }
@@ -134,4 +138,4 @@ footer { padding-bottom: 2rem; }
   #email-firstname { margin-bottom: 10px; }
   #information h3 { font-size: 7vw; } }
 
-@media (min-width: 1200px) { .to-top { display: none; } }
+@media (min-width: 1201px) { .to-top { display: none; } }

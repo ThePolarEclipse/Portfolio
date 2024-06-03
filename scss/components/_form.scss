@@ -5,7 +5,7 @@
 		width: 100%;
 		background: lightgrey;
 		border: none;
-		padding: 2px;
+		padding: 10px;
 		padding-left: 10px;
 
 		&::placeholder{
@@ -19,6 +19,18 @@
 }
 .email-submit{
 	margin-bottom: 1vw;
+	padding: 7px;
+
+	cursor: pointer;
+
+	background: $pale-orange;
+
+	border-radius: 10%;
+	border-color: lightgrey;
+
+	text-transform: uppercase;
+	font-weight: 600;
+
 }
 
 #information, #inputs{

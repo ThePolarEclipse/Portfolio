@@ -46,14 +46,14 @@
 //is more than that viewport
 @mixin more-viewport($breakpoint) {
   @if $breakpoint == XS {
-    @media (min-width: 280px) { @content; }
+    @media (min-width: 281px) { @content; }
   } @else if $breakpoint == S {
-    @media (min-width: 567px) { @content; }
+    @media (min-width: 568px) { @content; }
   } @else if $breakpoint == M {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 769px) { @content; }
   } @else if $breakpoint == L {
-    @media (min-width: 992px) { @content; }
+    @media (min-width: 993px) { @content; }
   } @else if $breakpoint == XL {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1201px) { @content; }
   }
 }
