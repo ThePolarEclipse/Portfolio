@@ -21,6 +21,7 @@
 	max-height: 100vh;
 	text-align: center;
 	text-shadow: 2px 2px $primary-purple, -2px -2px $primary-orange;
+	overflow: hidden;
 
 	h1, h2, p{
 		color: white;
@@ -33,11 +34,6 @@
 
 	&-footer{
 		padding-top: 10vw;
-	}
-
-	&-page h2, &-page h3{
-		border-bottom: 1px dotted grey;
-		
 	}
 }
 
@@ -58,10 +54,10 @@
 	right: 10px;
 	z-index: 2;
 
-	height: 8vw;
-	width: 8vw;
+	height: 13vw;
+	width: 13vw;
 
-	font-size: 5vw;
+	font-size: 7vw;
 
 	background: $pale-purple;
 
@@ -69,7 +65,7 @@
 	border-radius: 5%;
 }
 
-.burger-menu{
+#burger-menu{
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -83,6 +79,11 @@
 
 	border: $pale-purple-border solid 2px;
 	border-radius: 5%;
+
+	font-size: 5vw;
+	&>{
+		border: none;
+	}
 }
 
 footer{

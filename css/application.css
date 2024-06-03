@@ -48,7 +48,7 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 #sidebar { position: fixed; left: 0; z-index: 99; height: 100%; width: 15vw; background: #e9e0ff; border-right: 5px solid #c5adff; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
 
-#banner { position: relative; width: 100%; max-height: 100vh; text-align: center; text-shadow: 2px 2px #4A19B5, -2px -2px #e0811f; }
+#banner { position: relative; width: 100%; max-height: 100vh; text-align: center; text-shadow: 2px 2px #4A19B5, -2px -2px #e0811f; overflow: hidden; }
 
 #banner h1, #banner h2, #banner p { color: white; }
 
@@ -56,13 +56,13 @@ body { letter-spacing: 0.4px; margin: 0 auto; }
 
 .container-footer { padding-top: 10vw; }
 
-.container-page h2, .container-page h3 { border-bottom: 1px dotted grey; }
-
 #get-in-touch { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-around; padding-top: 2vw; width: 100%; }
 
-.btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 8vw; width: 8vw; font-size: 5vw; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
+.btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 13vw; width: 13vw; font-size: 7vw; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
 
-.burger-menu { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
+#burger-menu { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; font-size: 5vw; }
+
+#burger-menu > { border: none; }
 
 footer { padding-bottom: 2rem; }
 
@@ -91,6 +91,8 @@ footer { padding-bottom: 2rem; }
 .icon-hamburger::after { content: "\e9bd"; }
 
 .centered { position: absolute; transform: translate(-50%, -50%); margin: 0 auto; white-space: nowrap; overflow: hidden; }
+
+.paragraph-breaker { margin-bottom: 5vw; }
 
 .banner-image { width: 100%; max-height: 100vh; }
 
@@ -127,9 +129,11 @@ footer { padding-bottom: 2rem; }
 @media (min-width: 567px) { .container { width: 85vw; float: right; max-width: 85%; }
   #project-list { margin-top: 1vw; max-width: 100%; }
   #banner { width: 85vw; max-width: 85%; float: right; }
-  .burger-menu { display: none; } }
+  #burger-menu { display: none; } }
 
 @media (max-width: 280px) { .name-inputs { display: block; }
   .name-inputs .form-input { width: 100%; }
   #email-firstname { margin-bottom: 10px; }
   #information h3 { font-size: 7vw; } }
+
+@media (min-width: 1200px) { .to-top { display: none; } }

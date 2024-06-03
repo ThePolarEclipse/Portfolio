@@ -78,7 +78,7 @@
 		max-width: 85%;
 		float: right;
 	}
-	.burger-menu{
+	#burger-menu{
 		display: none;
 	}
 }
@@ -97,5 +97,10 @@
 
 	#information h3{
 		font-size: 7vw;
+	}
+}
+@include more-viewport(XL) {
+	.to-top{
+		display:none;
 	}
 }
