@@ -42,8 +42,8 @@
             </div>
             <div id="banner">
                 <img src="media/background.jpg" alt"Background image" class="banner-image">
-                <h1 class="centered">I'm Richard Searle</h1>
-                <h2 class="centered">- Web Developer -</h2>
+                <h1 class="effect-type centered">I'm Richard Searle</h1>
+                <h2 class="effect-type centered">- Web Developer -</h2>
 
                 <p class="centered hide-lessthanS">Scroll Down<br>vvv</p>
             </div>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div id="inputs">
-                        <form>
+                        <form onsubmit="return validateForm()">
                             <div class="form-group name-inputs">
                                 <label class="hidden">Your first name</label>
                                 <input class="form-input" id="email-firstname" name="firstname" type="text" placeholder="First Name*">
@@ -123,6 +123,7 @@
                     </div>
                 </div>
             </div>
+        <script src="javascript/script.js"></script>
         </body>
         <footer>
             <div class="container container-footer">
