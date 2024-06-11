@@ -53,4 +53,5 @@ function validateForm() {
 
     return true;
 }
-
+$("#project-list").hide(0);
+$("#project-list").fadeIn(500);
