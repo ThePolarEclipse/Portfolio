@@ -44,8 +44,7 @@
 		}
 
 		&:hover{
-			top: -10px;
-			transition: .5s ease;
+			transform: scale(1.075);
 		}
 	}
 }
