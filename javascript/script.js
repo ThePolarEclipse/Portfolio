@@ -34,25 +34,37 @@ function validateForm() {
         { id: 'email-message', name: 'Message' }
     ];
 
+    let invalidFields = [];
+
     for (let field of fields) {
         let value = document.getElementById(field.id).value.trim();
 
         if (!value) {
-            alert(`${field.name} is required.`);
-            return false;
-        }
-
-        if (field.type === 'email') {
+            invalidFields.push(field.name);
+        } else if (field.type === 'email') {
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(value)) {
-                alert(`Please enter a valid ${field.name}.`);
-                return false;
+                invalidFields.push(`${field.name} (not a valid format)`);
             }
         }
     }
 
+    if (invalidFields.length > 0) {
+        let errorMessage = `Please correct the following fields:\n`;
+        for (let field of invalidFields) {
+            if (field.endsWith(' (not a valid format)')) {
+                errorMessage += `- ${field.replace(' (not a valid format)', '')}: The email is not a valid format\n`;
+            } else {
+                errorMessage += `- ${field}: Empty\n`;
+            }
+        }
+        alert(errorMessage);
+        return false;
+    }
+
     return true;
 }
+
 $("#project-list").hide(0);
 $("#project-list").fadeIn(500);
 
@@ -92,12 +104,24 @@ prependMenu();
 
 
 
-//burger menu code
+//js burger menu code
 document.addEventListener('DOMContentLoaded', function () {
     const burgerButton = document.getElementById('burger-button');
     const menuContent = document.getElementById('menu-content');
+    const menuLinks = menuContent.querySelectorAll('h2 > a');
 
     burgerButton.addEventListener('click', function () {
+        toggleMenu();
+    });
+
+    // closes the menu when an h2 element inside menu is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            toggleMenu();
+        });
+    });
+
+    function toggleMenu() {
         if (menuContent.classList.contains('menu-hidden')) {
             menuContent.classList.remove('menu-hidden');
             menuContent.classList.add('menu-visible');
@@ -105,5 +129,5 @@ document.addEventListener('DOMContentLoaded', function () {
             menuContent.classList.remove('menu-visible');
             menuContent.classList.add('menu-hidden');
         }
-    });
+    }
 });

@@ -10,7 +10,7 @@ body { letter-spacing: 0.4px; margin: 0 auto; background: #eef; }
 
 .hidden { display: none; }
 
-#project-list { display: flex; flex-direction: column; width: 100%; }
+#project-list { display: flex; flex-direction: column; width: 100%; padding-top: 2vw; }
 
 #project-list .odd { border: 2px solid #c5adff; background: #ffce99; }
 
@@ -43,6 +43,8 @@ body { letter-spacing: 0.4px; margin: 0 auto; background: #eef; }
 .name-inputs { display: flex; justify-content: space-between; }
 
 .name-inputs .form-input { width: 49%; }
+
+textarea { resize: none; }
 
 .darken:hover { transition: filter 0.15s ease; filter: brightness(80%); }
 
@@ -82,7 +84,7 @@ pre { border: #c5adff solid 2px; max-height: 300px; /* Adjust as needed */ overf
 
 #banner h2.centered { top: 58%; left: 50%; font-size: 6vw; }
 
-#banner p.centered { top: 85%; left: 50%; font-size: 2vw; }
+#banner a.centered { top: 85%; left: 50%; font-size: 2vw; color: white; }
 
 .initials { font-weight: 900; font-size: 5vw; }
 
