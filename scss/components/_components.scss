@@ -70,7 +70,7 @@
 	border-radius: 5%;
 }
 
-#burger-menu{
+.menu-visible {
 	position: fixed;
 	top: 0;
 	z-index: 1;
@@ -78,17 +78,26 @@
 	width: 96%;
 	right: 2%;
 
-	display: flex;
+	display: block;
 
 	background: $pale-purple;
 
 	border: $pale-purple-border solid 2px;
 	border-radius: 5%;
 
+	text-align: center;
+
 	font-size: 5vw;
 	&>{
 		border: none;
 	}
+	
+	
+}
+
+.menu-hidden {
+    display: none;
+	border-color: none;
 }
 
 footer{

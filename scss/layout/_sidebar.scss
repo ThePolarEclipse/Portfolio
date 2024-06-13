@@ -9,8 +9,19 @@
 
 	border-bottom: 5px solid $pale-purple-border;
 
-	.initials a:hover{
-        text-decoration: none;
+	transition: scale .5s ease;
+
+	.initials {
+		animation: spin 1s;
+
+		&:hover{
+			transform: scale(1.075);
+		}
+
+		a:hover{
+			text-decoration: none;
+			
+		}
 	}
 }
 .sidebar-items{
@@ -29,4 +40,13 @@
 
 	border-top: 5px solid $pale-purple-border;
 	border-bottom: 5px solid $pale-purple-border;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

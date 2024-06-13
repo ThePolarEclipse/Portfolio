@@ -7,39 +7,39 @@
         <link rel="stylesheet" href="css/application.css">
     </head>
     <body id="top">  
-        <details id="burger-menu">
-            <summary class="btn-hamburger icon icon-hamburger"></summary>
-            <div class="container">
+        <div id="burger-menu">
+            <button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
                 <h2><a href="internal-pages/about-me.html">About Me</a></h2>
                 <h2><a href="#project-list">My Portfolio</a></h2>
                 <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
                 <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
-                <div>
-                    <h2><a href="#get-in-touch">Contact Me</a></h2>
-                </div>
+                <h2><a href="#get-in-touch">Contact Me</a></h2>
             </div>
-        </details>
+        </div>
         <header>
-            <div id="sidebar">
-                <div class="initials-box">
-                    <h1 class="initials"><a href="index.html"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></a></h1>
-                </div>
-                <div class="sidebar-items">
-                    <h2><a href="internal-pages/about-me.html">About Me</a></h2>
-                    <h2><a href="#project-list">My Portfolio</a></h2>
-                    <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
-                    <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
-                    <div id="sidebar-contact">
-                        <h2><a href="#get-in-touch">Contact Me</a></h2>
+            <nav>
+                <div id="sidebar">
+                    <div class="initials-box">
+                        <h1 class="initials"><a href="index.html"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></a></h1>
                     </div>
-                    <div id="header-socials">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="sidebar-items">
+                        <h2><a href="internal-pages/about-me.html">About Me</a></h2>
+                        <h2><a href="#project-list">My Portfolio</a></h2>
+                        <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
+                        <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
+                        <div id="sidebar-contact">
+                            <h2><a href="#get-in-touch">Contact Me</a></h2>
+                        </div>
+                        <div id="header-socials">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
             <div id="banner">
                 <img src="media/background.jpg" alt"Background image" class="banner-image">
                 <h1 class="effect-type centered">I'm Richard Searle</h1>
@@ -48,8 +48,8 @@
                 <p class="centered hide-lessthanS">Scroll Down<br>vvv</p>
             </div>
         </header>
-        <body>
-            <div class="container">
+        <main>
+            <div class="container" >
                 <div id="project-list">
                     <a href="https://thepolareclipse.github.io/NetmattersCopy-RS/" target="_blank">
                         <div class="project-item odd">
@@ -123,13 +123,13 @@
                     </div>
                 </div>
             </div>
-        <script src="javascript/jquery-3.7.1.min.js"></script>
-        <script src="javascript/script.js"></script>
-        </body>
+        </main>
         <footer>
             <div class="container container-footer">
                 <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
             </div>
         </footer>
+        <script src="javascript/jquery-3.7.1.min.js"></script>
+        <script src="javascript/script.js"></script>
     </body>
 </html>

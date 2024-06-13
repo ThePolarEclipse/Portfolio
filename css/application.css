@@ -60,9 +60,11 @@ body { letter-spacing: 0.4px; margin: 0 auto; background: #eef; }
 
 .btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 13vw; width: 13vw; font-size: 7vw; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
 
-#burger-menu { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; font-size: 5vw; }
+.menu-visible { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: block; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; text-align: center; font-size: 5vw; }
 
-#burger-menu > { border: none; }
+.menu-visible > { border: none; }
+
+.menu-hidden { display: none; border-color: none; }
 
 footer { padding-bottom: 2rem; }
 
@@ -98,13 +100,20 @@ pre { border: #c5adff solid 2px; max-height: 300px; /* Adjust as needed */ overf
 
 .banner-image { width: 100%; max-height: 100vh; }
 
-.initials-box { height: 10vw; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 5px solid #c5adff; }
+.initials-box { height: 10vw; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 5px solid #c5adff; transition: scale .5s ease; }
+
+.initials-box .initials { animation: spin 1s; }
+
+.initials-box .initials:hover { transform: scale(1.075); }
 
 .initials-box .initials a:hover { text-decoration: none; }
 
 .sidebar-items { width: 100%; display: flex; flex-direction: column; align-items: center; }
 
 #sidebar-contact { margin-top: 2vw; width: 100%; display: flex; flex-direction: column; align-items: center; border-top: 5px solid #c5adff; border-bottom: 5px solid #c5adff; }
+
+@keyframes spin { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
 
 .primary-purple_text { color: #4A19B5; }
 
@@ -128,7 +137,8 @@ pre { border: #c5adff solid 2px; max-height: 300px; /* Adjust as needed */ overf
 @media (max-width: 768px) { .btn-hamburger { display: flex; flex-direction: row; justify-content: center; align-items: center; }
   #sidebar { display: none; } }
 
-@media (max-width: 567px) { .hide-lessthanS { display: none; } }
+@media (max-width: 567px) { .hide-lessthanS { display: none; }
+  pre > code { font-size: 13px; font-weight: 500; } }
 
 @media (min-width: 769px) { .container { width: 85vw; float: right; max-width: 85%; }
   #project-list { margin-top: 1vw; max-width: 100%; }

@@ -67,7 +67,12 @@
 	.hide-lessthanS{
 		display:none;
 	}
+	pre>code{
+		font-size: 13px;
+		font-weight: 500;
+	}
 }
+
 @include more-viewport(M) {
 	.container{
 		width: 85vw;

@@ -7,18 +7,16 @@
         <link rel="stylesheet" href="../css/application.css">
     </head>
     <body id="top">  
-        <details id="burger-menu">
-            <summary class="btn-hamburger icon icon-hamburger"></summary>
-            <div class="container">
+        <div id="burger-menu">
+            <button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
                 <h2><a href="about-me.html">About Me</a></h2>
                 <h2><a href="../index.html#project-list">My Portfolio</a></h2>
                 <h2><a href="coding-examples.html">Coding Examples</a></h2>
                 <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
-                <div>
-                    <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
-                </div>
+                <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
             </div>
-        </details>
+        </div>
         <header>
             <div id="sidebar">
                 <div class="initials-box">
@@ -42,7 +40,7 @@
             </div>
             
         </header>
-        <body>
+        <main>
             <div class="container container-page">
                 <h1>HTML</h1>
                 <p>The code below is what I used to create a burger menu without the use of JS.</p>
@@ -149,7 +147,7 @@
 
     return true;
 }</pre></code>
-                <p>This code below is a fork of JS and is used in a software called Wallpaper Engine. This code is a system I created in order to animate sprites depending on how they move across a wallpaper. This system can be used by anyone and is fully commented.</p>
+                <p>This script provides a robust framework for animating Pok&eacute;mon layers in Wallpaper Engine, featuring dynamic function creation, optional path visualization, and comprehensive error checking. Its design allows for flexible and scalable animation sequences, making it a powerful tool for creating animated wallpapers with complex movements and interactions.</p>
                 <pre><code>'use strict';//keeps things safe
 //------------------------------------------------------------------------------------------------
 //IMPORTANT
@@ -407,11 +405,13 @@ function moveSE(value) {
   move(actions[actionNum].speed / 1.5, -actions[actionNum].speed / 2);
 }</pre></code>
             </div>
-        </body>
+        </main>
         <footer>
             <div class="container container-footer">
                 <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
             </div>
         </footer>
+        <script src="../javascript/jquery-3.7.1.min.js"></script>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>

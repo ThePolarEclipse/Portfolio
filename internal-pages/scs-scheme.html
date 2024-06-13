@@ -7,18 +7,16 @@
         <link rel="stylesheet" href="../css/application.css">
     </head>
     <body id="top">  
-        <details id="burger-menu">
-            <summary class="btn-hamburger icon icon-hamburger"></summary>
-            <div class="container">
+        <div id="burger-menu">
+            <button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
                 <h2><a href="about-me.html">About Me</a></h2>
                 <h2><a href="../index.html#project-list">My Portfolio</a></h2>
                 <h2><a href="coding-examples.html">Coding Examples</a></h2>
                 <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
-                <div>
-                    <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
-                </div>
+                <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
             </div>
-        </details>
+        </div>
         <header>
             <div id="sidebar">
                 <div class="initials-box">
@@ -41,7 +39,7 @@
                 </div>
             </div>
         </header>
-        <body>
+        <main>
             <div class="container container-page">
                 <h2>Introduction to Scion Coalition Scheme</h2>
                 <p class="paragraph-breaker">The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
@@ -59,11 +57,13 @@
                     Broad spectrum of clients, working nationwide<br>
                     Operate to strict company values</p>
            </div>
-        </body>
+        </main>
         <footer>
             <div class="container container-footer">
                 <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
             </div>
         </footer>
+        <script src="../javascript/jquery-3.7.1.min.js"></script>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>

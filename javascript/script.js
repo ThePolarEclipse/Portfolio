@@ -55,3 +55,19 @@ function validateForm() {
 }
 $("#project-list").hide(0);
 $("#project-list").fadeIn(500);
+
+//burger menu code
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerButton = document.getElementById('burger-button');
+    const menuContent = document.getElementById('menu-content');
+
+    burgerButton.addEventListener('click', function () {
+        if (menuContent.classList.contains('menu-hidden')) {
+            menuContent.classList.remove('menu-hidden');
+            menuContent.classList.add('menu-visible');
+        } else {
+            menuContent.classList.remove('menu-visible');
+            menuContent.classList.add('menu-hidden');
+        }
+    });
+});

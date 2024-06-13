@@ -7,18 +7,16 @@
         <link rel="stylesheet" href="../css/application.css">
     </head>
     <body id="top">  
-        <details id="burger-menu">
-            <summary class="btn-hamburger icon icon-hamburger"></summary>
-            <div class="container">
+        <div id="burger-menu">
+            <button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
                 <h2><a href="about-me.html">About Me</a></h2>
                 <h2><a href="../index.html#project-list">My Portfolio</a></h2>
                 <h2><a href="coding-examples.html">Coding Examples</a></h2>
                 <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
-                <div>
-                    <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
-                </div>
+                <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
             </div>
-        </details>
+        </div>
         <header>
             <div id="sidebar">
                 <div class="initials-box">
@@ -42,7 +40,7 @@
             </div>
             
         </header>
-        <body>
+        <main>
             <div class="container container-page">
                 <h2>About me</h2>
                 <h3>Introduction</h3>
@@ -52,11 +50,13 @@
                 <h3>Interests and Hobbies</h3>
                 <p>In my free time I like to be creative. This can range from coding something to designing or even just filling a spreadsheet with information.<br><br>I've always enjoyed making things and as I grew up, that manifested into various aspects of my life. For example, I have coded software that can turn a sprite sheet into a gif by reading various files. Another example would be when I created an entire world of stories. I put that all on a spreadsheet but later, as I learnt web development, I transferred that data into a stylised and professional information page.</p>
             </div>
-        </body>
+        </main>
         <footer>
             <div class="container container-footer">
                 <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
             </div>
         </footer>
+        <script src="../javascript/jquery-3.7.1.min.js"></script>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>
