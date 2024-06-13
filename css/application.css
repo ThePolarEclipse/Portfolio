@@ -58,6 +58,14 @@ body { letter-spacing: 0.4px; margin: 0 auto; background: #eef; }
 
 #get-in-touch { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-around; padding-top: 2vw; width: 100%; }
 
+#burger-menu { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border-radius: 5%; font-size: 5vw; }
+
+#burger-menu > { border: none; }
+
+#burger-menu-no-js { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: flex; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; font-size: 5vw; }
+
+#burger-menu-no-js > { border: none; }
+
 .btn-hamburger { position: fixed; top: 10px; right: 10px; z-index: 2; height: 13vw; width: 13vw; font-size: 7vw; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; }
 
 .menu-visible { position: fixed; top: 0; z-index: 1; width: 96%; right: 2%; display: block; background: #e9e0ff; border: #c5adff solid 2px; border-radius: 5%; text-align: center; font-size: 5vw; }

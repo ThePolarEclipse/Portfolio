@@ -53,6 +53,47 @@
 	width: 100%;
 }
 
+#burger-menu{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	width: 96%;
+	right: 2%;
+
+	display: flex;
+
+	background: $pale-purple;
+
+	border-radius: 5%;
+
+	font-size: 5vw;
+	&>{
+		border: none;
+	}
+}
+
+#burger-menu-no-js{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	width: 96%;
+	right: 2%;
+
+	display: flex;
+
+	background: $pale-purple;
+
+	border: $pale-purple-border solid 2px;
+	border-radius: 5%;
+
+	font-size: 5vw;
+	&>{
+		border: none;
+	}
+}
+
 .btn-hamburger{
 	position: fixed;
 	top: 10px;

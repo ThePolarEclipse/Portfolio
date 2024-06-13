@@ -2,7 +2,7 @@ var elements = document.getElementsByClassName("effect-type");
 var textArray = [];
 var speed = 50; //higher number is slower
 
-// Store the original text content and then clear it
+// Stores the original text content and then clear it
 for (var j = 0; j < elements.length; j++) {
   textArray[j] = elements[j].textContent;
   elements[j].textContent = '';
@@ -55,6 +55,42 @@ function validateForm() {
 }
 $("#project-list").hide(0);
 $("#project-list").fadeIn(500);
+
+//disables the html burger menu when js loads, otherwise is used in place of the js menu.
+$("#burger-menu-no-js").hide(0);
+
+// Function to check if current page is the index page
+function isIndexPage() {
+    return window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html';
+}
+
+// Prepends the burger menu based on the page.
+function prependMenu() {
+    if (isIndexPage()) {
+        console.log("This is the index page.");
+        $("#burger-menu").prepend(`<button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
+                <h2><a href="internal-pages/about-me.html">About Me</a></h2>
+                <h2><a href="#project-list">My Portfolio</a></h2>
+                <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
+                <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
+                <h2><a href="#get-in-touch">Contact Me</a></h2>
+            </div>`);
+    } else {
+        console.log("This is not the index page.");
+        $("#burger-menu").prepend(`<button id="burger-button" class="btn-hamburger icon icon-hamburger"></button>
+            <div id="menu-content" class="menu-hidden">
+                <h2><a href="about-me.html">About Me</a></h2>
+                <h2><a href="../index.html#project-list">My Portfolio</a></h2>
+                <h2><a href="coding-examples.html">Coding Examples</a></h2>
+                <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
+                <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
+            </div>`);
+    }
+}
+prependMenu();
+
+
 
 //burger menu code
 document.addEventListener('DOMContentLoaded', function () {
