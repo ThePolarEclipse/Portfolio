@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Richard Searle | Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="css/application.css">
-    </head>
-    <body id="top">  
-        <div id="burger-menu">
-            <details id="burger-menu-no-js">
-                <summary class="btn-hamburger icon icon-hamburger"></summary>
-                <div class="container">
-                    <h2><a href="internal-pages/about-me.html">About Me</a></h2>
-                    <h2><a href="#project-list">My Portfolio</a></h2>
-                    <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
-                    <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
-                    <div>
-                        <h2><a href="#get-in-touch">Contact Me</a></h2>
-                    </div>
-                </div>
-            </details>
-        </div>
-        <header>
-            <nav>
-                <div id="sidebar">
-                    <div class="initials-box">
-                        <h1 class="initials"><a href="index.html"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></a></h1>
-                    </div>
-                    <div class="sidebar-items">
-                        <h2><a href="internal-pages/about-me.html">About Me</a></h2>
-                        <h2><a href="#project-list">My Portfolio</a></h2>
-                        <h2><a href="internal-pages/coding-examples.html">Coding Examples</a></h2>
-                        <h2><a href="internal-pages/scs-scheme.html">SCS Scheme</a></h2>
-                        <div id="sidebar-contact">
-                            <h2><a href="#get-in-touch">Contact Me</a></h2>
-                        </div>
-                        <div id="header-socials">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+        <?php include 'php/menu.php'; ?>
             <div id="banner">
                 <img src="media/background.jpg" alt="Background image" class="banner-image">
                 <h1 class="effect-type centered">I'm Richard Searle</h1>
@@ -55,7 +10,7 @@
         <main>
             <div class="container" >
                 <div id="project-list">
-                    <a href="https://thepolareclipse.github.io/NetmattersCopy-RS/" target="_blank">
+                    <a href="https://netmatters-homepage.richard-searle.netmatters-scs.co.uk" target="_blank">
                         <div class="project-item odd">
                             <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
                             <h2>Netmatters Site</h2>
@@ -103,39 +58,31 @@
                         </div>
                     </div>
                     <div id="inputs">
-                        <form onsubmit="return validateForm()">
+                        <form id="contactForm" action="php/send_email.php" method="post" onsubmit="return validateForm()">
                             <div class="form-group name-inputs">
                                 <label class="hidden">Your first name</label>
-                                <input class="form-input" id="email-firstname" name="firstname" type="text" placeholder="First Name*">
+                                <input class="form-input" id="email-firstname" name="firstname" type="text" placeholder="First Name*" required>
 
                                 <label class="hidden">Your last name</label>
-                                <input class="form-input" id="email-lastname" name="lastname" type="text" placeholder="Last Name*">
+                                <input class="form-input" id="email-lastname" name="lastname" type="text" placeholder="Last Name*" required>
                             </div>
                             <div class="form-group">
                                 <label class="hidden">Your email address</label>
-                                <input class="form-input" id="email-address" name="emailaddress" type="text" placeholder="Email Address*">
+                                <input class="form-input" id="email-address" name="emailaddress" type="email" placeholder="Email Address*" required>
                             </div>
                             <div class="form-group">
                                 <label class="hidden">Subject matter</label>
-                                <input class="form-input" id="email-subject" name="subjectmatter" type="text" placeholder="Subject*">
+                                <input class="form-input" id="email-subject" name="subjectmatter" type="text" placeholder="Subject*" required>
                             </div>
                             <div class="form-group">
                                 <label class="hidden">Your message</label>
-                                <textarea class="form-input" id="email-message" name="message" placeholder="Message...*"></textarea>
+                                <textarea class="form-input" id="email-message" name="message" placeholder="Message..." required></textarea>
                             </div>
 
-                            <button name="submit" class="btn email-submit darken">Submit</button>
-                         </form>
+                            <button type="submit" name="submit" class="btn email-submit darken">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div id="bottom" class="container container-footer">
-                <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
-            </div>
-        </footer>
-        <script src="javascript/jquery-3.7.1.min.js"></script>
-        <script src="javascript/script.js"></script>
-    </body>
-</html>
+        <?php include 'php/footer.php'; ?>

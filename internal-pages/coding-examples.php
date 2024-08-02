@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Richard Searle | Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="../css/application.css">
-    </head>
-    <body id="top">  
-        <div id="burger-menu">
-            <details id="burger-menu-no-js">
-                <summary class="btn-hamburger icon icon-hamburger"></summary>
-                <div class="container">
-                    <h2><a href="about-me.html">About Me</a></h2>
-                    <h2><a href="../index.html#project-list">My Portfolio</a></h2>
-                    <h2><a href="coding-examples.html">Coding Examples</a></h2>
-                    <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
-                    <div>
-                        <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
-                    </div>
-                </div>
-            </details>
-        </div>
-        <header>
-            <div id="sidebar">
-                <div class="initials-box">
-                    <h1 class="initials"><a href="../index.html"><span class="primary-purple_text">R </span><span class="primary-orange_text">S</span></a></h1>
-                </div>
-                <div class="sidebar-items">
-                    <h2><a href="about-me.html">About Me</a></h2>
-                    <h2><a href="../index.html#project-list">My Portfolio</a></h2>
-                    <h2><a href="coding-examples.html">Coding Examples</a></h2>
-                    <h2><a href="scs-scheme.html">SCS Scheme</a></h2>
-                    <div id="sidebar-contact">
-                        <h2><a href="../index.html#get-in-touch">Contact Me</a></h2>
-                    </div>
-                    <div id="header-socials">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
+      <?php include '../php/menu.php'; ?>
             <div id="banner">
                 <img src="../media/background.jpg" alt"Background image" class="banner-image">
                 <h1 class="effect-type centered">I'm Richard Searle</h1>
@@ -57,10 +14,10 @@
                 <pre><code>&lt;details id="burger-menu"&gt;
         &lt;summary class="btn-hamburger icon icon-hamburger"&gt;&lt;/summary&gt;
         &lt;div class="container"&gt;
-            &lt;h2&gt;&lt;a href="internal-pages/about-me.html"&gt;About Me&lt;/a&gt;&lt;/h2&gt;
+            &lt;h2&gt;&lt;a href="internal-pages/about-me.php"&gt;About Me&lt;/a&gt;&lt;/h2&gt;
             &lt;h2&gt;&lt;a href="#project-list"&gt;My Portfolio&lt;/a&gt;&lt;/h2&gt;
-            &lt;h2&gt;&lt;a href="internal-pages/coding-examples.html"&gt;Coding Examples&lt;/a&gt;&lt;/h2&gt;
-            &lt;h2&gt;&lt;a href="internal-pages/scs-scheme.html"&gt;SCS Scheme&lt;/a&gt;&lt;/h2&gt;
+            &lt;h2&gt;&lt;a href="internal-pages/coding-examples.php"&gt;Coding Examples&lt;/a&gt;&lt;/h2&gt;
+            &lt;h2&gt;&lt;a href="internal-pages/scs-scheme.php"&gt;SCS Scheme&lt;/a&gt;&lt;/h2&gt;
             &lt;div&gt;
                 &lt;h2&gt;&lt;a href="#get-in-touch"&gt;Contact Me&lt;/a&gt;&lt;/h2&gt;
             &lt;/div&gt;
@@ -416,12 +373,4 @@ function moveSE(value) {
 }</pre></code>
             </div>
         </main>
-        <footer>
-            <div id="bottom" class="container container-footer">
-                <a class="to-top" href="#top"><strong>^</strong>  Back to top  <strong>^</strong></a>
-            </div>
-        </footer>
-        <script src="../javascript/jquery-3.7.1.min.js"></script>
-        <script src="../javascript/script.js"></script>
-    </body>
-</html>
+        <?php include '../php/footer.php'; ?>

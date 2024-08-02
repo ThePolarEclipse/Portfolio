@@ -37,7 +37,7 @@ function validateForm() {
     let invalidFields = [];
 
     for (let field of fields) {
-        let value = document.getElementById(field.id).value.trim();
+        let value = document.getElementById(field.id).value;
 
         if (!value) {
             invalidFields.push(field.name);
