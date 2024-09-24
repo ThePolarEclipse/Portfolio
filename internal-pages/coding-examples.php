@@ -371,6 +371,54 @@ function moveSW(value) {
 function moveSE(value) {
   move(actions[actionNum].speed / 1.5, -actions[actionNum].speed / 2);
 }</pre></code>
+<h1>Laravel</h1>
+<p>This Laravel Blade template defines a form for adding a new employee. It extends the layouts.app layout and is part of a view rendered within a Bootstrap-styled container.</p>
+<pre><code>&#64;extends('layouts.app')
+
+&#64;section('content')
+    &lt;div class="container"&gt;
+        &lt;div class="col-md-9 col-lg-7 mx-auto form-bg py-4 px-4 rounded"&gt;
+            &lt;form action="&#123;&#123; route('employee.store') &#125;&#125;" method="post"&gt;
+                &#64;csrf
+
+                &lt;h2 class="mb-4 mt-1"&gt;Add Employee&lt;/h2&gt;
+                &lt;x-input name="first_name" label="First Name &lt;span class='text-danger'&gt;*&lt;/span&gt;" /&gt;
+                &lt;x-input name="last_name" label="Last Name &lt;span class='text-danger'&gt;*&lt;/span&gt;" /&gt;
+                &lt;x-floating name="company_id" label="Company"&gt;
+                    &lt;select
+                        class="form-select &#123;&#123; $errors->has('company_id')? 'is-invalid' : '' &#125;&#125;"
+                        name="company_id"
+                        id="company_id"
+                    &gt;
+                        &lt;option 
+                            value=""
+                            &#123;&#123; empty(old('company_id', $company_id))? 'selected' : '' &#125;&#125;
+                        &gt;No Company / Free Agent&lt;/option&gt;
+                        &#64;foreach (&#92;App&#92;Models&#92;Company::all() as $company)
+                            &lt;option 
+                                value="&#123;&#123; $company->id &#125;&#125;"
+                                &#123;&#123; old('company_id', $company_id) == $company->id? 'selected' : '' &#125;&#125;
+                            &gt;&#123;&#123; $company->name &#125;&#125;&lt;/option&gt;
+                        &#64;endforeach
+                    &lt;/select&gt;
+                &lt;/x-floating&gt;
+                &lt;x-input name="email" label="Email" /&gt;
+                &lt;x-input name="telephone" label="Phone Number" /&gt;
+                
+                &lt;button
+                    type="submit"
+                    class="btn btn-primary"
+                &gt;
+                    Submit
+                &lt;/button&gt;
+                
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&#64;endsection
+</code></pre>
+
             </div>
         </main>
         <?php include '../php/footer.php'; ?>
