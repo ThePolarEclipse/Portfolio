@@ -24,23 +24,25 @@
                             <h3 class="icon icon-arrow_right">View Project</h3>
                         </div>
                     </a>
-                    <div class="project-item odd">
-                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
-                        <h2>Project Three</h2>
-                        <h3 class="icon icon-arrow_right">View Project</h3>
-                    </div>
+                    <a href="https://github.com/ThePolarEclipse/manager-main" target="_blank">
+                        <div class="project-item odd">
+                            <img class="project-img" src="media/project-three.png" alt="Netmatters homepage project">
+                            <h2>Admin Panel</h2>
+                            <h3 class="icon icon-arrow_right">View Project</h3>
+                        </div>
+                    </a>
                     <div class="project-item even">
-                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/coming-soon.png" alt="Netmatters homepage project">
                         <h2>Project Four</h2>
                         <h3 class="icon icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item odd">
-                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/coming-soon.png" alt="Netmatters homepage project">
                         <h2> Project Five</h2>
                         <h3 class="icon icon-arrow_right">View Project</h3>
                     </div>
                     <div class="project-item even">
-                        <img class="project-img" src="media/project-one.png" alt="Netmatters homepage project">
+                        <img class="project-img" src="media/coming-soon.png" alt="Netmatters homepage project">
                         <h2>Project Six</h2>
                         <h3 class="icon icon-arrow_right">View Project</h3>
                     </div>
